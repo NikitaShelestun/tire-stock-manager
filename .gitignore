@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+pycache/
+*.pyc
+*.pkl
+*_hash.txt
+tires_data.xlsx
+backup_tires.xlsx
+.env
