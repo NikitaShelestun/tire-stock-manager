@@ -3,7 +3,7 @@ import os
 import time
 import threading
 
-# FAST START - show animation immediately
+# FAST START - show animation
 class FastProgressBar:
     def __init__(self):
         self.stop = False
@@ -41,13 +41,13 @@ class FastProgressBar:
         sys.stdout.write(f'\r[✓] [{bar}] 100% - {message}\n')
         sys.stdout.flush()
 
-# Start animation IMMEDIATELY
+# Start animation
 progress = FastProgressBar()
 progress.start()
 progress.update(1, "Initializing...")
 time.sleep(0.1)
 
-# Now import heavy modules
+# import heavy modules
 progress.update(3, "Loading pandas...")
 import pandas as pd
 
