@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 
-# Путь к вашему Excel файлу
-excel_path = r'C:\Users\yagla\Desktop\EditorTireStockManagerMain\tires_data.xlsx'
+# Path to your Excel file
+excel_path = r'.\tires_data.xlsx'
 
 if not os.path.exists(excel_path):
     print(f"File not found at: {excel_path}")
